@@ -26,14 +26,18 @@ public class ObserverApplication {
 		observable.add(observer2);
 		NotificationObserver observer3= new EmailObserver("sapna@gmail.com", observable);
 		observable.add(observer3);
+
+		System.out.println("\n" + "Current Stock: " + observable.getStock());
+		System.out.println("Setting New Stock to: " + 10 + "\n");
 		observable.setStock(10);
 
-		System.out.println(observable.getStock());
+		System.out.println("\n" + "Current Stock: " + observable.getStock());
+		System.out.println("Setting New Stock to: " + 0 + "\n");
 		observable.setStock(0);
-		System.out.println(observable.getStock());
 
+		System.out.println("\n" + "Current Stock: " + observable.getStock());
+		System.out.println("Setting New Stock to: " + 20 + "\n");
 		observable.setStock(20);
-		System.out.println(observable.getStock());
 
 	}
 

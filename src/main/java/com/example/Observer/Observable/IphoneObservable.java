@@ -35,7 +35,7 @@ int stockSize=0;
 
         @Override
         public void setStock(int stockCount) {
-            if(stockSize==0)
+            if(stockCount>0)
             {
                notifys();
                   stockSize= stockSize+stockCount;
